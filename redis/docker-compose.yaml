@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  redis:
+    image: redis:6.2-alpine
+    container_name: myRedis
+    restart: always
+    ports:
+      - 6379:6379
+    # command: redis-server --loglevel warning --requirepass noah5438
+    volumes:
+      - redis_volume_data:/data
+
+volumes:
+  redis_volume_data:

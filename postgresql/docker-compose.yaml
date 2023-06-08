@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=bladecorp
+      - POSTGRES_PASSWORD=1R9T@74QA6
+      - POSTGRES_DB=TestDB
+    volumes:
+      - ./data:/var/lib/postgresql/data
