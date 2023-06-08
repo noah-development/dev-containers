@@ -13,8 +13,8 @@ services:
     volumes:
       - ./data:/var/lib/rabbitmq/mnesia
     environment:
-      RABBITMQ_DEFAULT_USER: noelinares
-      RABBITMQ_DEFAULT_PASS: noah5438
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
       RABBITMQ_VM_MEMORY_HIGH_WATERMARK: 0.5
     networks:
       rabbitmq_net:
